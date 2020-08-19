@@ -10,13 +10,14 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn;
+    Button btn,btnlog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnlog=findViewById(R.id.btnlog);
         btn=findViewById(R.id.btn);
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -24,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, Register.class);
                 startActivity(i);
+            }
+        });
+
+        btnlog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
     }
