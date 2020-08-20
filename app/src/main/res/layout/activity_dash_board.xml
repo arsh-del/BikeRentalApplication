@@ -10,14 +10,14 @@
         android:id="@+id/lend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="318dp"
-        android:layout_marginBottom="365dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="20dp"
         android:text="Lend"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/rent"
+        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rent"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -25,11 +25,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="314dp"
-        android:layout_marginEnd="76dp"
+        android:layout_marginEnd="108dp"
         android:layout_marginBottom="369dp"
         android:text="Rent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
