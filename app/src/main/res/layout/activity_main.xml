@@ -8,55 +8,26 @@
 
 
     <Button
-        android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="13dp"
-        android:layout_marginEnd="100dp"
-        android:text="Sign-Up"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnlog"
-        app:layout_constraintTop_toTopOf="@+id/btnlog" />
-
-    <Button
-        android:id="@+id/btnlog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="91dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="300dp"
         android:text="Login"
+        android:id="@+id/btnlooooo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+         />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="142dp"
-        android:layout_marginEnd="118dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="188dp"
+        android:text="Splash Activity"
+        android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="118dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/btnlog"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

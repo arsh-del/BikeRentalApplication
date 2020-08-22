@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -33,14 +34,17 @@ public class BikeDetail extends AppCompatActivity {
     ImageView userimg, bikepic;
     private StorageReference StorageReference;
     private StorageReference bikeStorageReference;
+    FirebaseAuth fauth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bike_detail);
         userimg=findViewById(R.id.userimg);
         bikepic=findViewById(R.id.bikeimg);
-        bikeStorageReference=FirebaseStorage.getInstance().getReference().child("BikeLending.jpg");
-        StorageReference =FirebaseStorage.getInstance().getReference().child("profile.jpg");
+        fauth = FirebaseAuth.getInstance();
+        bikeStorageReference=FirebaseStorage.getInstance().getReference().child("users/"+fauth.getCurrentUser().getUid()+"/BikeLending.jpg");
+        StorageReference =FirebaseStorage.getInstance().getReference().child("users/"+fauth.getCurrentUser().getUid()+"/profile.jpg");
        // final StorageReference fileRef = StorageReference.child("profile.jpg");
 
         try {
